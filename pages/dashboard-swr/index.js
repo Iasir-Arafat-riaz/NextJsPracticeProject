@@ -1,19 +1,16 @@
 import useSWR from "swr";
 
-const featecher = async () => {
-  const res = await fetch("http://localhost:4000/dashboard");
-  const data = await res.json();
-  return data;
-};
-
 const DashboardSwr = () => {
-  const { data, error } = useSWR("dashDatas", featecher);
-  console.log(data);
+  const fetcher = async () => {
+    const res = await fetch("http://localhost:4000/dashboard");
+    const data = await res.json();
+    return data;
+  };
+  const { data, error } = useSWR("dashboard-swr", fetcher);
 
   return (
     <>
-      <h1>SWR</h1>
-      <h2>Subscriber {data.subscriber}</h2>
+      <h2>Total Subscriber = {data?.subscriber}</h2>
     </>
   );
 };
