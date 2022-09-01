@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback:false,
+    fallback: false,
   };
 }
 
@@ -30,7 +30,7 @@ export async function getStaticProps(context) {
   const { params } = context;
   // console.log(params)
 
-  const res = await fetch (
+  const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${params.serviceDetails}`
   );
   const cmntId = await res.json();
