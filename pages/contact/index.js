@@ -52,12 +52,12 @@ export default Contact;
 //     props: { data },
 //   };
 // }
-export async function getServerSideProps(){
-  const res=await axios(`http://localhost:4000/user`)
+export async function getServerSideProps() {
+  const res = await axios(`http://localhost:4000/user`);
+  const { data } = res;
   return {
     props: {
-      data: res.data
+      data,
     },
-  }
- 
+  };
 }
