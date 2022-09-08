@@ -9,12 +9,17 @@ import '../styles/globals.css'
 
 
 function MyApp({ Component, pageProps }) {
+  const Layout = Component.Layout || EmptyLayout;
   return <>
   <Header/>
+  <Layout>
   <Component {...pageProps} />
+  </Layout>
   
   <Footer/>
   </>
 }
 
 export default MyApp
+
+const EmptyLayout = ({ children }) => <>{children}</>;
