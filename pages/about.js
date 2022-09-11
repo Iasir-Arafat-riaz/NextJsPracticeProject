@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import comImage from "../image/e-sheba.png";
-import styles from "../styles/About.module.css";
+import styles from "../styles/About.module.scss";
 
 const About = ({ service = 99 }) => {
   return (
@@ -10,8 +10,8 @@ const About = ({ service = 99 }) => {
       <Link href="/">
         <a>go home</a>
       </Link>
-      <h1>About</h1>
-      <div className={styles.highlight}>about page</div>
+      <h1 className={styles.highlightscss}>About</h1>
+      <div >about page</div>
       <Image src={comImage} />
       <Link replace href={`/services/${service}`}>
         <a>services</a>
