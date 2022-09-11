@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import comImage from "../image/e-sheba.png";
 import styles from "../styles/About.module.scss";
+import Footer from "../components/Footer";
 
 const About = ({ service = 99 }) => {
   return (
@@ -21,3 +22,12 @@ const About = ({ service = 99 }) => {
 };
 
 export default About;
+
+About.getLayout= function PageLayout(page){
+  return(
+    <>
+    {page}
+    <Footer/>
+    </>
+  )
+}
