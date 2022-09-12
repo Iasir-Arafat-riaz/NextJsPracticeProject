@@ -9,8 +9,8 @@ import {
   Button,
 } from "react-bootstrap";
 import Image from "next/image";
-import compImage from "../public/images/comImg.png";
-import styles from "../styles/Home.module.css";
+import compImage from "public/images/comImg.png";
+import styles from "styles/Home.module.css";
 
 const Header = () => {
   return (
