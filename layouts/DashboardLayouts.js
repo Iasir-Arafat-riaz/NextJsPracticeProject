@@ -34,30 +34,7 @@ const DashboardLayouts = ({ children }) => {
                     <i className="fas fa-paperclip me-2"></i>Payment
                   </a>
                 </Link>
-                {/* <Link
-                    to="/Dashboard/AddService"
-                    className="list-group-item list-group-item-action bg-transparent second-text fw-bold"
-                  >
-                    <i className="fas fa-shopping-cart me-2"></i>Add Service
-                  </Link>
-                  <Link
-                    to="/Dashboard/ManageServices"
-                    className="list-group-item list-group-item-action bg-transparent second-text fw-bold"
-                  >
-                    <i className="fas fa-gift me-2"></i>Manage Services
-                  </Link>
-                  <Link
-                    to="/Dashboard/ManageOrder"
-                    className="list-group-item list-group-item-action bg-transparent second-text fw-bold"
-                  >
-                    <i className="fas fa-comment-dots me-2"></i>Manage Order
-                  </Link>
-                  <Link
-                    to="/Dashboard/MakeAdmin"
-                    className="list-group-item list-group-item-action bg-transparent second-text fw-bold"
-                  >
-                    <i className="fas fa-map-marker-alt me-2"></i>Make Admin
-                  </Link> */}
+                
 
                 <Link
                   // onClick={logOut}
