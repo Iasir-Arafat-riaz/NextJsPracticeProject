@@ -13,7 +13,8 @@ const Todos = ({ todos }) => {
   //   console.log(completedTodo);
   return (
     <>
-      <button onClick={completedTodos}>Completed todos</button>
+      <button onClick={completedTodos}>Completed todos is here</button>
+      
       <hr />
       {completedTodo.map((todo) => {
         return (

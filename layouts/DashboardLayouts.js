@@ -51,7 +51,7 @@ const DashboardLayouts = ({ children }) => {
           </div>
         </div>
         <div className="col-md-10 dashboardOrigin">
-          {/* <Outlet /> */}
+          {/* <Outlet/>*/}
           {children}
         </div>
       </div>
