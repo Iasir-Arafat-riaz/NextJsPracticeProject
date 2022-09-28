@@ -57,10 +57,10 @@ export default function Home({service=100}) {
         <a>About Us</a>
       </Link>
      
-      <h1>Next js app</h1>
+      <h1>Next js application</h1>
       <Link href={`/services/${service}`}><a>services</a></Link>
       <br />
-      <h6>Go to Docs Page</h6>
+      <h6>Go to Docs Page please</h6>
       <button onClick={clickHandler}>Go Docs</button>
     </div>
   );
