@@ -43,20 +43,19 @@ export default function Home({service=100}) {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><Image src={firstImg}/></SwiperSlide>
-        <SwiperSlide><Image src={secImg}/></SwiperSlide>
-        <SwiperSlide><Image src={firstImg}/></SwiperSlide>
-        <SwiperSlide><Image src={secImg}/></SwiperSlide>
-        <SwiperSlide><Image src={firstImg}/></SwiperSlide>
-        <SwiperSlide><Image src={secImg}/></SwiperSlide>
-        <SwiperSlide><Image src={firstImg}/></SwiperSlide>
-        <SwiperSlide><Image src={secImg}/></SwiperSlide>
-        <SwiperSlide><Image src={firstImg}/></SwiperSlide>
+        <SwiperSlide><Image src={firstImg} alt="image"/></SwiperSlide>
+        <SwiperSlide><Image src={secImg} alt="image"/></SwiperSlide>
+        <SwiperSlide><Image src={firstImg} alt="image"/></SwiperSlide>
+        <SwiperSlide><Image src={secImg} alt="image"/></SwiperSlide>
+        <SwiperSlide><Image src={firstImg} alt="image"/></SwiperSlide>
+        <SwiperSlide><Image src={secImg} alt="image"/></SwiperSlide>
+        <SwiperSlide><Image src={firstImg} alt="image"/></SwiperSlide>
+        <SwiperSlide><Image src={secImg} alt="image"/></SwiperSlide>
+        <SwiperSlide><Image src={firstImg} alt="image"/></SwiperSlide>
       </Swiper>
       <Link href="/about">
         <a>About Us</a>
       </Link>
-     
       <h1>Next js application</h1>
       <Link href={`/services/${service}`}><a>services</a></Link>
       <br />
